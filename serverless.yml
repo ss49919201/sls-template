@@ -1,0 +1,15 @@
+service: example
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  ecr:
+    images:
+      go-lambda:
+        path: ./
+
+functions:
+  go-lambda:
+    image:
+      name: go-lambda
+    name: go-lambda
