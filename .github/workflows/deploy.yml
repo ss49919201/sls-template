@@ -9,6 +9,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
+    environment: main
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js 18.x
