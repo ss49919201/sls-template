@@ -17,8 +17,6 @@ jobs:
       with:
         node-version: 18.x
     - name: install dependencies
-      run: echo ${HOGE}
-    - name: install dependencies
       run: npm ci
     - name: serverless deploy
       run: npx sls deploy
