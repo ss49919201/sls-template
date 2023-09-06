@@ -16,9 +16,7 @@ jobs:
       with:
         node-version: 18.x
     - name: install dependencies
-      run: echo ${{secrets.HOGE}} && echo ${HOGE}
-      env:
-        HOGE: ${{secrets.HOGE}}
+      run: echo ${HOGE}
     - name: install dependencies
       run: npm ci
     - name: serverless deploy
